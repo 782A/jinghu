@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>隐私政策 — 净呼 JingHu</title>
+    <meta name="description" content="净呼隐私政策：我们如何收集、使用和保护您的信息。您的数据只属于您。">
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+    <link rel="canonical" href="https://gdpp.com/privacy.html">
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        .policy-hero {
+            padding: 120px 0 40px;
+            text-align: center;
+            background: linear-gradient(180deg, var(--primary-light) 0%, var(--bg) 100%);
+        }
+        .policy-hero h1 { font-size: 2.25rem; margin-bottom: 8px; }
+        .policy-hero .updated { color: var(--text-secondary); font-size: 0.875rem; }
+        .policy-content {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 48px 24px 80px;
+        }
+        .policy-content h2 {
+            font-size: 1.5rem;
+            text-align: left;
+            margin: 40px 0 16px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--primary-light);
+        }
+        .policy-content h2:first-child { margin-top: 0; }
+        .policy-content h3 {
+            font-size: 1.125rem;
+            margin: 24px 0 12px;
+        }
+        .policy-content p {
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            font-size: 0.9375rem;
+            line-height: 1.7;
+        }
+        .policy-content ul {
+            margin: 12px 0 20px 20px;
+            color: var(--text-secondary);
+            font-size: 0.9375rem;
+        }
+        .policy-content ul li { margin-bottom: 8px; line-height: 1.6; }
+        .policy-content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0 24px;
+            font-size: 0.875rem;
+        }
+        .policy-content th, .policy-content td {
+            padding: 10px 14px;
+            text-align: left;
+            border: 1px solid var(--border);
+        }
+        .policy-content th {
+            background: var(--bg-alt);
+            font-weight: 600;
+            color: var(--text);
+        }
+        .policy-content td { color: var(--text-secondary); }
+        .highlight-box {
+            background: var(--primary-light);
+            border-left: 4px solid var(--primary);
+            padding: 20px 24px;
+            border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+            margin: 24px 0;
+        }
+        .highlight-box p { color: var(--text); font-weight: 500; margin-bottom: 0; }
+        .no-collect {
+            background: #e6f4ea;
+            border-left: 4px solid var(--accent);
+            padding: 20px 24px;
+            border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+            margin: 24px 0;
+        }
+        .no-collect ul { margin: 8px 0 0 20px; color: var(--text); }
+        .no-collect li { margin-bottom: 4px; }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="/" class="logo">
+                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="32" height="32" rx="8" fill="#1a73e8"/>
+                    <path d="M16 6L8 12v8l8 6 8-6v-8L16 6z" stroke="white" stroke-width="2" fill="none"/>
+                    <path d="M12 16l3 3 5-6" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                净呼
+            </a>
+            <ul class="nav-links">
+                <li><a href="/#features">功能</a></li>
+                <li><a href="/download.html">下载</a></li>
+                <li><a href="/privacy.html">隐私政策</a></li>
+                <li><a href="https://github.com/jjjq6001-bit/jinghu" target="_blank" rel="noopener">GitHub</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="policy-hero">
+        <div class="container">
+            <h1>隐私政策</h1>
+            <p class="updated">最后更新：2026年5月24日 | 生效日期：2026年5月24日</p>
+        </div>
+    </div>
+
+    <div class="policy-content">
+        <div class="highlight-box">
+            <p>净呼将垃圾检测完全在您的设备上处理。您的通话记录、短信内容和通讯录永远不会离开您的手机。</p>
+        </div>
+
+        <p>户部科技有限公司（以下简称"我们"）运营净呼移动应用（以下简称"本应用"）。本隐私政策说明我们在您使用本应用时如何收集、使用和保护您的信息。</p>
+
+        <h2>1. 我们收集的信息</h2>
+
+        <h3>1.1 本地处理的信息（从不上传）</h3>
+        <table>
+            <thead>
+                <tr><th>数据类型</th><th>用途</th><th>存储位置</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>通话记录元数据</td><td>识别垃圾来电</td><td>仅设备本地</td></tr>
+                <tr><td>短信内容</td><td>分析垃圾短信/钓鱼</td><td>仅设备本地</td></tr>
+                <tr><td>电话号码（哈希后）</td><td>匹配垃圾号码库</td><td>仅设备本地</td></tr>
+                <tr><td>拦截规则</td><td>执行用户偏好</td><td>仅设备本地</td></tr>
+                <tr><td>AI模型推理数据</td><td>分类垃圾信息</td><td>仅设备本地</td></tr>
+            </tbody>
+        </table>
+
+        <h3>1.2 经您同意可能收集的信息</h3>
+        <table>
+            <thead>
+                <tr><th>数据类型</th><th>用途</th><th>法律依据</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>匿名使用统计</td><td>改善应用性能</td><td>同意（Firebase Analytics）</td></tr>
+                <tr><td>崩溃报告</td><td>修复Bug，提升稳定性</td><td>同意（Firebase Crashlytics）</td></tr>
+                <tr><td>高级订阅数据</td><td>处理付款</td><td>合同</td></tr>
+            </tbody>
+        </table>
+
+        <div class="no-collect">
+            <p><strong>我们绝不收集以下信息：</strong></p>
+            <ul>
+                <li>您的通讯录</li>
+                <li>完整电话号码（云端查询仅使用不可逆哈希）</li>
+                <li>短信内容（100%设备端处理）</li>
+                <li>通话录音</li>
+                <li>位置数据</li>
+                <li>用于追踪的设备标识符</li>
+            </ul>
+        </div>
+
+        <h2>2. 云端查询</h2>
+        <p>当净呼通过云端垃圾号码库查询时：</p>
+        <ul>
+            <li>您的手机对电话号码创建<strong>不可逆SHA-256哈希</strong></li>
+            <li>仅将哈希值发送到我们的服务器</li>
+            <li>服务器返回该哈希的垃圾评分</li>
+            <li><strong>原始电话号码永远不会传输</strong></li>
+        </ul>
+
+        <h2>3. 数据安全</h2>
+        <p>我们采取以下措施保护您的数据：</p>
+        <ul>
+            <li><strong>SQLCipher加密</strong>：本地数据库使用AES-256加密</li>
+            <li><strong>Android Keystore</strong>：密钥由设备硬件特征派生，安全存储</li>
+            <li><strong>TLS 1.3</strong>：所有网络通信使用最新加密协议</li>
+            <li><strong>Certificate Pinning</strong>：防止中间人攻击</li>
+            <li><strong>R8代码混淆</strong>：防止逆向工程</li>
+        </ul>
+
+        <h2>4. 数据保留</h2>
+        <ul>
+            <li>本地数据：保留在您的设备上，直到您删除应用或手动清除</li>
+            <li>崩溃报告：保留90天后自动删除</li>
+            <li>匿名统计数据：保留26个月后自动删除</li>
+            <li>订阅数据：保留至订阅终止后3年（法律要求）</li>
+        </ul>
+
+        <h2>5. 您的权利</h2>
+        <p>根据适用法律，您有权：</p>
+        <ul>
+            <li><strong>知情权</strong>：了解我们收集了哪些个人信息</li>
+            <li><strong>删除权</strong>：要求删除您的个人信息</li>
+            <li><strong>更正权</strong>：要求更正不准确的个人信息</li>
+            <li><strong>拒绝权</strong>：拒绝数据处理（如分析统计）</li>
+            <li><strong>可携权</strong>：以结构化格式获取您的数据</li>
+        </ul>
+        <p>如需行使上述权利，请联系：<a href="mailto:developer@gdpp.com">developer@gdpp.com</a></p>
+
+        <h2>6. 儿童隐私</h2>
+        <p>本应用不面向13岁以下儿童。我们不会故意收集儿童的个人信息。如果我们发现错误收集了儿童数据，将立即删除。</p>
+
+        <h2>7. 第三方服务</h2>
+        <p>本应用可能使用以下第三方服务（仅限gplay版本）：</p>
+        <table>
+            <thead>
+                <tr><th>服务</th><th>提供商</th><th>用途</th><th>隐私政策</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Firebase Analytics</td><td>Google</td><td>匿名使用统计</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google隐私政策</a></td></tr>
+                <tr><td>Firebase Crashlytics</td><td>Google</td><td>崩溃报告</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google隐私政策</a></td></tr>
+            </tbody>
+        </table>
+        <p>F-Droid版本不包含任何第三方分析或崩溃报告服务。</p>
+
+        <h2>8. 政策更新</h2>
+        <p>我们可能会不时更新本隐私政策。更新后的政策将在本页面发布，并修改"最后更新"日期。重大变更将通过应用内通知告知您。</p>
+
+        <h2>9. 联系我们</h2>
+        <p>如有关于本隐私政策的任何问题，请联系：</p>
+        <ul>
+            <li><strong>公司</strong>：户部科技有限公司 (Hubu Tech Co., Ltd.)</li>
+            <li><strong>邮箱</strong>：<a href="mailto:developer@gdpp.com">developer@gdpp.com</a></li>
+            <li><strong>官网</strong>：<a href="https://gdpp.com">https://gdpp.com</a></li>
+            <li><strong>隐私政策URL</strong>：<a href="https://gdpp.com/privacy">https://gdpp.com/privacy</a></li>
+        </ul>
+    </div>
+
+    <footer>
+        <div class="container">
+            <ul class="footer-links">
+                <li><a href="/">首页</a></li>
+                <li><a href="/download.html">下载</a></li>
+                <li><a href="/privacy.html">隐私政策</a></li>
+                <li><a href="https://github.com/jjjq6001-bit/jinghu" target="_blank" rel="noopener">GitHub</a></li>
+                <li><a href="mailto:developer@gdpp.com">联系我们</a></li>
+            </ul>
+            <p class="copyright">&copy; 2024-2026 户部科技有限公司 (Hubu Tech Co., Ltd.) 保留所有权利。</p>
+        </div>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            document.querySelector('nav').classList.toggle('scrolled', window.scrollY > 10);
+        });
+    </script>
+</body>
+</html>
