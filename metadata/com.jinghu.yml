@@ -1,0 +1,65 @@
+Categories:
+  - Phone & SMS
+  - Security
+License: Apache-2.0
+AuthorName: Hubu Tech Co., Ltd.
+AuthorEmail: developer@qclb.com
+AuthorWebSite: https://qclb.com
+WebSite: https://qclb.com
+SourceCode: https://github.com/jjjq6001-bit/jinghu
+IssueTracker: https://github.com/jjjq6001-bit/jinghu/issues
+Changelog: https://github.com/jjjq6001-bit/jinghu/releases
+Donate: https://qclb.com/donate
+
+AutoName: JingHu
+
+Name: JingHu
+Summary: AI-powered spam call and SMS blocker
+Description: |-
+    JingHu (净呼) is an AI-powered spam call and SMS blocking application
+    that protects your phone from unwanted communications.
+
+    '''Features:'''
+
+    * Intelligent call blocking using CallScreeningService (Android 9+)
+    * SMS filtering and blocking with keyword/pattern matching
+    * AI classification engine (Naive Bayes + MobileBERT via TensorFlow Lite)
+    * Customizable blocklist and allowlist management
+    * Keyword and prefix-based filtering rules
+    * Encrypted local database (SQLCipher)
+    * Privacy-first: all SMS content processed locally, never uploaded
+    * Cloud number lookup with irreversible hash anonymization
+    * Freemium model with generous free tier
+
+    '''Anti-Features:'''
+
+    * NonFreeNet: Cloud number lookup uses qclb.com API (optional, can be disabled)
+    * UpstreamNonFree: The upstream source includes a "gplay" flavor with
+      proprietary Firebase dependencies. This F-Droid build uses the "fdroid"
+      flavor which excludes all proprietary dependencies.
+
+RequiresAndroid: 8.0
+
+RepoType: git
+Repo: https://github.com/jjjq6001-bit/jinghu.git
+
+Builds:
+  - versionName: 1.0.0
+    versionCode: 1
+    commit: v1.0.0
+    subdir: app
+    gradle:
+      - fdroid
+    output: build/outputs/apk/fdroid/release/app-fdroid-release-unsigned.apk
+    prebuild: sed -i -e '/google-services/d' -e '/firebase-crashlytics/d' build.gradle.kts
+
+MaintainerNotes: |-
+    The app uses product flavors to separate proprietary (gplay) and
+    FOSS (fdroid) builds. The fdroid flavor excludes Firebase Analytics,
+    Crashlytics, Remote Config, Messaging, and TFLite GPU delegate.
+    All proprietary code is in the gplay source set only.
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: 1.0.0
+CurrentVersionCode: 1
